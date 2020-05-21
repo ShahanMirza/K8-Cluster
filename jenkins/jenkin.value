@@ -1,0 +1,13 @@
+master:
+  tag: lts
+  Adminpassword: admin
+  resources:
+    limits:
+      cpu: "2000m"
+      memory: "4096Mi"
+  serviceType: NodePort
+  nodePort: 32323
+
+persistence:
+  storageClass: "managed-nfs-storage"
+
